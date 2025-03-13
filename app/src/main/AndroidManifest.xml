@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SerenosViagens"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.editar.EditarViagemActivity"></activity>
+        <activity android:name=".activities.listar.ListarViagensActivity"></activity>
+        <activity android:name=".activities.listar.ListarDespesasActivity"></activity>
+        <activity android:name=".activities.registrar.RegistrarGasolinaActivity"></activity>
+        <activity android:name=".activities.registrar.RegistrarAereoActivity"></activity>
+        <activity android:name=".activities.registrar.RegistrarRefeicaoActivity"></activity>
+        <activity android:name=".activities.registrar.RegistrarHospedagemActivity"></activity>
+        <activity android:name=".activities.registrar.RegistrarUsuarioActivity"></activity>
+        <activity android:name=".activities.registrar.RegistrarViagemActivity"></activity>
+        <activity android:name=".activities.registrar.RegistrarDiversosActivity"></activity>
+        <activity android:name=".activities.SelecionarDespesaActivity"></activity>
+        <activity android:name=".activities.visualizar.VisualizarViagemActivity"></activity>
+        <activity android:name=".activities.visualizar.VisualizarGasolinaActivity"></activity>
+        <activity android:name=".activities.visualizar.VisualizarAereoActivity"></activity>
+        <activity android:name=".activities.visualizar.VisualizarRefeicaoActivity"></activity>
+        <activity android:name=".activities.visualizar.VisualizarHospedagemActivity"></activity>
+        <activity android:name=".activities.visualizar.VisualizarDiversosActivity"></activity>
+        <activity android:name=".activities.visualizar.VisualizarResultadoActivity"></activity>
+    </application>
+
+</manifest>

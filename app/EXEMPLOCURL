@@ -1,0 +1,56 @@
+Usar ContaId do nandin:128112
+
+cURL GET:
+curl --request GET \
+  --url 'http://api.genialsaude.com.br/api/listar/viagem/conta?contaId=128112' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/8.4.5'
+
+cURL POST:
+  curl --request POST \
+    --url http://api.genialsaude.com.br/api/cadastro/viagem/ \
+    --header 'Content-Type: application/json' \
+    --header 'User-Agent: insomnia/8.4.5' \
+    --data '{
+    "gasolina": {
+      "totalEstimadoKM": 3,
+      "mediaKMLitro": 4.1,
+      "custoMedioLitro": 5.1,
+      "totalVeiculos": 6,
+      "idConta": 128112
+    },
+    "aereo": {
+      "custoPessoa": 3.1,
+      "custoAluguelVeiculo": 4.1,
+      "idConta": 128112
+    },
+    "listaEntretenimento": [
+      {
+        "valor": 3.1,
+        "entretenimento": "sample string 4",
+        "idConta": 128112
+      },
+      {
+        "valor": 3.1,
+        "entretenimento": "sample string 4",
+        "idConta": 128112
+      }
+    ],
+    "hospedagem": {
+      "custoMedioNoite": 3.1,
+      "totalNoite": 4,
+      "totalQuartos": 5,
+      "idConta": 128112
+    },
+    "refeicao": {
+      "custoRefeicao": 3.1,
+      "refeicoesDia": 4,
+      "idConta": 128112
+    },
+    "totalViajantes": 2,
+    "duracaoViagem": 3,
+    "custoTotalViagem": 4.1,
+    "custoPorPessoa": 5.1,
+    "local": "sample string 6",
+    "idConta": 128112
+  }'

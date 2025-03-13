@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:backgroundTint="@color/cinza"
+        app:titleTextColor="@color/verde">
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/volta32"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:contentDescription="Voltar"
+            android:padding="8dp" />
+        <TextView
+            android:id="@+id/tituloViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viagem"
+            android:textColor="@color/verde"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="50dp">
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:backgroundTint="@color/cinza"
+            android:textColor="@color/preto"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/editar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editar"
+            android:backgroundTint="@color/cinza"
+            android:textColor="@color/preto"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lista_despesas"
+            android:backgroundTint="@color/cinza"
+            android:textColor="@color/preto"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>
