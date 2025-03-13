@@ -1,4 +1,4 @@
-# Travel Expense Tracker - Mobile Development Project 🌍📱
+# Serenos Viagens - Mobile Development Project 🌍📱
 
 This project was developed as part of the **Mobile Development** course during the **first semester of 2024**. It is a **travel control application** designed to help users manage their **expenses** and **itineraries** during trips. Built with **Android Studio**, **Gradle**, and **Java**, this app provides a simple and intuitive way to organize travel details.
 
